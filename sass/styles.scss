@@ -1,0 +1,8 @@
+@import "partials/settings";
+@import "partials/foundation";
+
+$light_grey: #ddd;
+
+h1 {
+  background: $light_grey;
+}
