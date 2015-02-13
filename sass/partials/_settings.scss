@@ -89,7 +89,7 @@ $include-html-global-classes: $include-html-classes;
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // We use these to define default font stacks
-// $font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$font-family-sans-serif: "Open Sans", Helvetica, Arial, sans-serif;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
@@ -116,10 +116,13 @@ $include-html-global-classes: $include-html-classes;
 // $oil         : #333333;
 // $jet         : #222222;
 // $black       : #000000;
+   $soft-blue   : #88C2C0;
+   $grey-medium : #535353;
+   $grey-dark   : #272727;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
+$primary-color: $soft-blue;
+$secondary-color: $grey-medium;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
@@ -127,7 +130,7 @@ $include-html-global-classes: $include-html-classes;
 
 // We use these to control various global styles
 // $body-bg: $white;
-// $body-font-color: $jet;
+$body-font-color: $grey-dark;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -153,13 +156,22 @@ $include-html-global-classes: $include-html-classes;
 // d. Media Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $small-range: (0em, 40em);
-// $medium-range: (40.063em, 64em);
-// $large-range: (64.063em, 90em);
-// $xlarge-range: (90.063em, 120em);
-// $xxlarge-range: (120.063em, 99999999em);
+// $small-range: (0em, 40em);               // <= 640
+$medium-short: (40.063em, 54.125em);        // 641 - 866
+// $medium-range: (40.063em, 64em);         // 641-1024 
+$medium-middle: (54.1875em, 60.3125em);     // 867-965      
+$medium-long: (60.375em, 75em);             // 966-1200
+// $large-range: (64.063em, 90em);          // 1025-1440
+$large-short: (75.063em, 90em);             // >= 1201
+// $xlarge-range: (90.063em, 120em);        // 1441-1920
+// $xxlarge-range: (120.063em, 99999999em); // 1921
 
-// $screen: "only screen";
+$screen: "only screen";
+
+$cust-med-short: "#{$screen} and (min-width:#{lower-bound($medium-short)}) and (max-width:#{upper-bound($medium-short)})";
+$cust-med-middle: "#{$screen} and (min-width:#{lower-bound($medium-middle)}) and (max-width:#{upper-bound($medium-middle)})";
+$cust-med-long: "#{$screen} and (min-width:#{lower-bound($medium-long)}) and (max-width:#{upper-bound($medium-long)})";
+$cust-lrg-short: "#{$screen} and (min-width:#{lower-bound($large-short)})";
 
 // $landscape: "#{$screen} and (orientation: landscape)";
 // $portrait: "#{$screen} and (orientation: portrait)";
@@ -1382,10 +1394,10 @@ $include-html-global-classes: $include-html-classes;
 
 // Background color for the top bar
 // $topbar-bg-color: $oil;
-// $topbar-bg: $topbar-bg-color;
+$topbar-bg: $grey-dark;
 
 // Height and margin
-// $topbar-height: rem-calc(45);
+$topbar-height: rem-calc(64);
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
@@ -1393,12 +1405,12 @@ $include-html-global-classes: $include-html-classes;
 // $topbar-title-font-size: rem-calc(17);
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: $white;
+$topbar-link-color: $primary-color;
 // $topbar-link-color-hover: $white;
 // $topbar-link-color-active: $white;
 // $topbar-link-color-active-hover: $white;
 // $topbar-link-weight: $font-weight-normal;
-// $topbar-link-font-size: rem-calc(13);
+$topbar-link-font-size: rem-calc(26);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
 // $topbar-link-bg-hover: $oil;

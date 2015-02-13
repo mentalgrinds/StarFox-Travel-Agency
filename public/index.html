@@ -7,6 +7,81 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  
+  <header>
+    <div class="fixed show-for-small-only mobile-main-nav"><!-- mobile nav start -->
+      <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="#"><span>Star</span>fox</a></h1>
+          </li>
+           <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+        <section class="top-bar-section">
+          <!-- Left Nav Section -->
+          <ul class="left">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Intersteller Travel</a></li>
+          </ul>
+        </section>
+      </nav>
+    </div><!-- mobile nav end -->
+    <div class="hide-for-small-only desktop-main-nav">
+      <div class="row"> 
+        <div class="logo">
+          <img src="../images/logo.svg" alt="flying saucer logo tilting forward">
+        </div>
+        <h1><span>StarFox</span> Intergalactic Travel Agency</h1>
+      </div>
+      <div class="custom-large-nav">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Intersteller Travel</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero-image">
+      <img src="../images/ship.svg" alt="flying saucer tilting to the right">
+    </div>
+    <p>We will take you to the <span>Moon and Back!</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quae inventore velit recusandae explicabo, doloremque deserunt necessitatibus cum saepe.</p>
+    <div class="hero-button">
+      <a href="#">Find Out More</a>
+    </div>
+  </section>
+  <section class="trip-panels">
+    <div class="row">
+      <div class="trip-info small-12 medium-12 large-4 column">
+        <h2 class="title">To the Moon</h2>
+        <div class="price">$30,000</div>
+        <p class="details">
+          Covers travel fare, lodgings, and meals for 3 months in space.
+        </p>          
+      </div>
+      <div class="trip-info small-12 medium-12 large-4 column">
+        <h2 class="title">Just Around Earth</h2>
+        <div class="price">$10,000</div>
+        <p class="details">
+          Covers travel fare, lodgings, and meals for 2 in space.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script src="vendor/modernizr/modernizr.js"></script>
+  <script src="vendor/jquery/dist/jquery.min.js"></script>
+  <script src="vendor/foundation/js/foundation.min.js"></script>
+  <script>$(document).foundation();</script>
+  <script src="js/app.js"></script>
 </body>
 </html>
