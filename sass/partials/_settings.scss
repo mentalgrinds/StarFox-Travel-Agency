@@ -145,7 +145,7 @@ $body-font-color: $grey-dark;
 // $last-child-float: $opposite-direction;
 
 // We use these to make sure border radius matches unless we want it different.
-// $global-radius: 3px;
+$global-radius: 6px;
 // $global-rounded: 1000px;
 
 // We use these to control inset shadow shiny edges and depressions.
@@ -169,6 +169,7 @@ $large-short: (75.063em, 90em);             // >= 1201
 $screen: "only screen";
 
 $cust-med-short: "#{$screen} and (min-width:#{lower-bound($medium-short)}) and (max-width:#{upper-bound($medium-short)})";
+$cust-med-short-to-middle: "#{$screen} and (min-width:#{lower-bound($medium-short)}) and (max-width:#{upper-bound($medium-middle)})";
 $cust-med-middle: "#{$screen} and (min-width:#{lower-bound($medium-middle)}) and (max-width:#{upper-bound($medium-middle)})";
 $cust-med-long: "#{$screen} and (min-width:#{lower-bound($medium-long)}) and (max-width:#{upper-bound($medium-long)})";
 $cust-lrg-short: "#{$screen} and (min-width:#{lower-bound($large-short)})";

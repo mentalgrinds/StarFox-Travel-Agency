@@ -12,10 +12,10 @@
       <nav class="top-bar" data-topbar role="navigation">
         <ul class="title-area">
           <li class="name">
-            <h1><a href="#"><span>Star</span>fox</a></h1>
+            <h1><a href="#"><img class="menu-logo" src="../images/logo.svg" alt=""><span>Star</span>Fox</a></h1>
           </li>
            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+          <li class="toggle-topbar"><a href="#"><img class="menu-toggle" src="../images/menu_icon.svg" alt=""></a></li>
         </ul>
         <section class="top-bar-section">
           <!-- Left Nav Section -->
@@ -33,7 +33,7 @@
         <div class="logo">
           <img src="../images/logo.svg" alt="flying saucer logo tilting forward">
         </div>
-        <h1><span>StarFox</span> Intergalactic Travel Agency</h1>
+        <h1 class="text-center"><span>StarFox</span> Intergalactic Travel Agency</h1>
       </div>
       <div class="custom-large-nav">
         <nav>
@@ -47,33 +47,45 @@
       </div>
     </div>
   </header>
-  <section class="hero">
-    <div class="hero-image">
-      <img src="../images/ship.svg" alt="flying saucer tilting to the right">
-    </div>
-    <p>We will take you to the <span>Moon and Back!</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quae inventore velit recusandae explicabo, doloremque deserunt necessitatibus cum saepe.</p>
-    <div class="hero-button">
-      <a href="#">Find Out More</a>
-    </div>
-  </section>
-  <section class="trip-panels">
-    <div class="row">
-      <div class="trip-info small-12 medium-12 large-4 column">
-        <h2 class="title">To the Moon</h2>
-        <div class="price">$30,000</div>
-        <p class="details">
-          Covers travel fare, lodgings, and meals for 3 months in space.
-        </p>          
+  <div class="hero-container">
+    <section class="hero">
+      <div class="hero-image">
+        <img src="../images/ship.svg" alt="flying saucer tilting to the right">
       </div>
-      <div class="trip-info small-12 medium-12 large-4 column">
-        <h2 class="title">Just Around Earth</h2>
-        <div class="price">$10,000</div>
-        <p class="details">
-          Covers travel fare, lodgings, and meals for 2 in space.
-        </p>
+      <p>We will take you to the <span>Moon and Back!</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quae inventore velit recusandae explicabo, doloremque deserunt necessitatibus cum saepe.</p>
+      <div class="hero-button">
+        <a href="#">Find Out More</a>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
+  <div class="trip-panels-container">
+    <section class="trip-panels">
+      <div class="row">
+        <div class="trip-info small-12 medium-12 large-4 column">
+          <h2 class="title">To the Moon</h2>
+          <div class="info-wrap">
+            <div class="price">$30,000</div>
+          </div>
+          <div class="info-wrap">
+            <p class="details">
+              Covers travel fare, lodgings, and meals for 3 months in space.
+            </p>
+          </div>
+        </div>
+        <div class="trip-info small-12 medium-12 large-4 column">
+          <h2 class="title">Just Around Earth</h2>
+          <div class="info-wrap">
+            <div class="price">$10,000</div>
+          </div>
+          <div class="info-wrap">
+            <p class="details">
+              Covers travel fare, lodgings, and meals for 2 in space.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
 
 
