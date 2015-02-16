@@ -1,0 +1,27 @@
+
+< 640              single column mobile menu
+>= 641 and < 866   single column desktop menu
+>= 867 and < 965   fixed body 866 variable margins
+>= 966 and < 1200  fixed margins 50 variable body
+>= 1201 and <      fixed body 1100 variable margins
+
+640 40
+641 40.063
+866 54.125
+867 54.1875
+965 60.3125
+966 60.375
+1200 75
+1201 75.063
+
+
+// medium gutter body gutter total
+//        0      640  0      640 
+//        47     866  51     964
+//        50     1100 50     1200
+//        150    1100 150    1400
+
+
+// from 866 to 964 the content stays 866 and the margins grow
+// from 965 the margins stay 50 and the content grows
+// up to the body growing to 1100 then it stays 1100 and the margin grows
