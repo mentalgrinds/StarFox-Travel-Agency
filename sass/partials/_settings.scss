@@ -156,15 +156,18 @@ $global-radius: 6px;
 // d. Media Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $small-range: (0em, 40em);               // <= 640
+// $small-range: (0em, 40em);               // <= 640 original
+$small-range: (0em, 40em);               // <= 640
 $medium-short: (40.063em, 54.125em);        // 641 - 866
-// $medium-range: (40.063em, 64em);         // 641-1024 
+// $medium-range: (40.063em, 64em);         // 641-1024 original
+$medium-range: (40.063em, 60.3125em);         // 641-965 
 $medium-middle: (54.1875em, 60.3125em);     // 867-965      
 $medium-long: (60.375em, 75em);             // 966-1200
-// $large-range: (64.063em, 90em);          // 1025-1440
+// $large-range: (64.063em, 90em);          // 1025-1440 original
+$large-range: (60.375em, 90em);          // 966-1440
 $large-short: (75.063em, 90em);             // >= 1201
-// $xlarge-range: (90.063em, 120em);        // 1441-1920
-// $xxlarge-range: (120.063em, 99999999em); // 1921
+$xlarge-range: (90.063em, 120em);        // 1441-1920
+$xxlarge-range: (120.063em, 99999999em); // 1921
 
 $screen: "only screen";
 

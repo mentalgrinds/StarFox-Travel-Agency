@@ -136,6 +136,17 @@ header {
     background: $primary-color;
     padding: 250px 66px 66px;
 
+    @media #{$cust-med-middle} {
+      max-width: upper-bound($medium-short);
+    }
+    @media #{$cust-med-long} {
+      max-width: none;
+    }
+    @media #{$cust-lrg-short} {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
     @media #{$medium-up} {
       border-radius: $global-radius;
       padding-top: 171px;
@@ -183,6 +194,10 @@ header {
       border-bottom: .4375rem solid $grey-dark;
       text-align: center;
       
+      @media #{$medium-up} {
+        max-width: 310px;
+        margin: auto;
+      }
       a {
         display: block;
         height: 4.4375rem;
@@ -196,7 +211,7 @@ header {
 
 .trip-panels-container {
   
-  padding: 64px;
+  padding: 58px 64px 0;
 
   .trip-panels {
 
@@ -208,17 +223,33 @@ header {
       margin-bottom: 60px;
 
       .info-wrap {
-        margin: 0 auto;
+        margin: 30px auto 0;
         width: 245px;
+
+        &.price-wrap {
+          
+          @media #{$cust-med-short-to-middle} {
+            width: 45%;
+          }
+        }
+
+        &.details-wrap {
+
+          @media #{$cust-med-short-to-middle} {
+            width: 55%;
+
+          }
+        }
       }
 
       .title {
         font-size: 1.5rem;
-        padding: 30px 0;
+        padding: 20px 0;
         margin: 0 -15px;
         font-weight: bold;
         color: $white;
         border-bottom: 1px solid #414141;
+        box-shadow: 0 1px #646464;
         
         @media #{$cust-med-short-to-middle} {
           width: 50%;
@@ -227,7 +258,7 @@ header {
       }
 
       .price {
-        font-size: 4rem;
+        font-size: 4.3rem;
         font-weight: 300;
         border-bottom: 10px solid $white;
 
@@ -240,6 +271,8 @@ header {
 
       .details {
         margin: 0;
+        margin-bottom: 40px;
+
         
         @media #{$cust-med-short-to-middle} {
           width: 50%;
@@ -250,3 +283,38 @@ header {
   }
 }
 
+.more-deals-container {
+
+  h2 {
+    padding: 20px 0;
+    margin: 0;
+    text-align: center;
+    background: $soft-blue;
+    font-weight: bold;
+  }
+
+  a {
+    color: $white;
+  }
+
+  img {
+    height: 45px;
+    width: 45px;
+  }
+}
+
+.footer-container {
+  background: $grey-dark;
+
+  .footer-wrap {
+    margin: 0 auto;
+    width: 290px;
+  
+    footer {
+      color: $secondary-color;
+      font-size: .9rem;
+      text-align: center;
+      padding: 25px 0;
+    }
+  }
+}
