@@ -23,16 +23,16 @@ meta.foundation-mq-large {
   width: 60.375em; }
 
 meta.foundation-mq-large-only {
-  font-family: "/only screen and (min-width:60.375em) and (max-width:90em)/";
+  font-family: "/only screen and (min-width:60.375em) and (max-width:75em)/";
   width: 60.375em; }
 
 meta.foundation-mq-xlarge {
-  font-family: "/only screen and (min-width:90.063em)/";
-  width: 90.063em; }
+  font-family: "/only screen and (min-width:75.063em)/";
+  width: 75.063em; }
 
 meta.foundation-mq-xlarge-only {
-  font-family: "/only screen and (min-width:90.063em) and (max-width:120em)/";
-  width: 90.063em; }
+  font-family: "/only screen and (min-width:75.063em) and (max-width:120em)/";
+  width: 75.063em; }
 
 meta.foundation-mq-xxlarge {
   font-family: "/only screen and (min-width:120.063em)/";
@@ -2389,7 +2389,7 @@ meta.foundation-mq-topbar {
   .medium-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:60.375em) and (max-width:90em) {
+@media only screen and (min-width:60.375em) and (max-width:75em) {
   .large-only-text-left {
     text-align: left !important; }
   .large-only-text-right {
@@ -2409,7 +2409,7 @@ meta.foundation-mq-topbar {
   .large-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:90.063em) and (max-width:120em) {
+@media only screen and (min-width:75.063em) and (max-width:120em) {
   .xlarge-only-text-left {
     text-align: left !important; }
   .xlarge-only-text-right {
@@ -2419,7 +2419,7 @@ meta.foundation-mq-topbar {
   .xlarge-only-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:90.063em) {
+@media only screen and (min-width:75.063em) {
   .xlarge-text-left {
     text-align: left !important; }
   .xlarge-text-right {
@@ -2755,7 +2755,7 @@ blockquote, blockquote p {
     display: table-cell !important; } }
 
 /* xlarge displays */
-@media only screen and (min-width:90.063em) {
+@media only screen and (min-width:75.063em) {
   .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .hide-for-large-only, .show-for-large-up, .hide-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
     display: inherit !important; }
   .show-for-small-only, .hide-for-small-up, .show-for-small, .show-for-small-down, .show-for-medium-only, .hide-for-medium-up, .show-for-medium, .show-for-medium-down, .show-for-large-only, .hide-for-large-up, .show-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .hide-for-xlarge-down, .show-for-xxlarge-only, .show-for-xxlarge-up, .show-for-xxlarge, .hide-for-xxlarge-down {
@@ -3016,6 +3016,8 @@ header {
 
 .mobile-main-nav {
   border-top: 6px solid #88C2C0; }
+  .mobile-main-nav .top-bar li {
+    border-top: 1px solid #88C2C0; }
   .mobile-main-nav .top-bar a {
     font-size: 1.6rem; }
     .mobile-main-nav .top-bar a span {
@@ -3070,7 +3072,15 @@ header {
         height: 4.0625rem; }
         .desktop-main-nav .custom-large-nav nav ul li {
           display: inline-block;
-          padding: 0 1.5rem; }
+          padding: 0 1.5rem;
+          -webkit-transition: background 0.3s ease-in-out;
+          -moz-transition: background 0.3s ease-in-out;
+          transition: background 0.3s ease-in-out; }
+          .desktop-main-nav .custom-large-nav nav ul li:hover {
+            background: #353535;
+            -webkit-transition: background 0.3s ease-in-out;
+            -moz-transition: background 0.3s ease-in-out;
+            transition: background 0.3s ease-in-out; }
           .desktop-main-nav .custom-large-nav nav ul li > a {
             color: #88C2C0;
             font-size: 1.1rem;
@@ -3100,6 +3110,9 @@ header {
     .hero-container .hero {
       border-radius: 6px;
       padding-top: 171px; } }
+  @media only screen and (min-width:60.375em) {
+    .hero-container .hero {
+      padding-top: 50px; } }
   .hero-container .hero .hero-image {
     position: absolute;
     margin: auto;
@@ -3113,6 +3126,11 @@ header {
     @media only screen and (min-width:40.063em) {
       .hero-container .hero .hero-image {
         top: -54px; } }
+    @media only screen and (min-width:60.375em) {
+      .hero-container .hero .hero-image {
+        left: initial;
+        right: 50px;
+        margin-left: 0; } }
     .hero-container .hero .hero-image img {
       height: 0;
       opacity: 0; }
@@ -3123,6 +3141,13 @@ header {
     line-height: 2.5rem;
     font-weight: 300;
     text-align: center; }
+    @media only screen and (min-width:60.375em) {
+      .hero-container .hero p {
+        float: left;
+        width: 57%;
+        text-align: left;
+        margin-bottom: 0;
+        padding-top: 0; } }
     .hero-container .hero p span {
       font-weight: 600; }
   .hero-container .hero .hero-button {
@@ -3130,11 +3155,23 @@ header {
     height: 4.4375rem;
     width: 100%;
     border-bottom: .4375rem solid #272727;
-    text-align: center; }
+    text-align: center;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out; }
+    .hero-container .hero .hero-button:hover {
+      background: #353535;
+      -webkit-transition: background 0.3s ease-in-out;
+      -moz-transition: background 0.3s ease-in-out;
+      transition: background 0.3s ease-in-out; }
     @media only screen and (min-width:40.063em) {
       .hero-container .hero .hero-button {
         max-width: 310px;
         margin: auto; } }
+    @media only screen and (min-width:60.375em) {
+      .hero-container .hero .hero-button {
+        float: right;
+        margin-top: 129px; } }
     .hero-container .hero .hero-button a {
       display: block;
       height: 4.4375rem;
@@ -3143,69 +3180,162 @@ header {
       line-height: 3.3; }
 
 .trip-panels-container {
-  padding: 58px 64px 0; }
-  .trip-panels-container .trip-panels .trip-info {
+  padding: 58px 49px 0; }
+  @media only screen and (min-width:40.063em) {
+    .trip-panels-container {
+      padding: 0 35px; } }
+  @media only screen and (min-width:60.375em) and (max-width:75em) {
+    .trip-panels-container section.trip-panels .row {
+      max-width: none; } }
+  @media only screen and (min-width:75.063em) {
+    .trip-panels-container section.trip-panels .row {
+      max-width: 1130px; } }
+  .trip-panels-container section.trip-panels .trip-info {
     background: #535353;
-    color: #FFFFFF;
-    text-align: center;
     border-radius: 6px;
-    margin-bottom: 60px; }
-    .trip-panels-container .trip-panels .trip-info .info-wrap {
-      margin: 30px auto 0;
-      width: 245px; }
-      @media only screen and (min-width:40.063em) and (max-width:60.3125em) {
-        .trip-panels-container .trip-panels .trip-info .info-wrap.price-wrap {
-          width: 45%; } }
-      @media only screen and (min-width:40.063em) and (max-width:60.3125em) {
-        .trip-panels-container .trip-panels .trip-info .info-wrap.details-wrap {
-          width: 55%; } }
-    .trip-panels-container .trip-panels .trip-info .title {
-      font-size: 1.5rem;
-      padding: 20px 0;
-      margin: 0 -15px;
-      font-weight: bold;
+    margin-bottom: 60px;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out; }
+    .trip-panels-container section.trip-panels .trip-info.trip-link:hover {
+      background: #353535;
+      -webkit-transition: background 0.3s ease-in-out;
+      -moz-transition: background 0.3s ease-in-out;
+      transition: background 0.3s ease-in-out; }
+    @media only screen and (min-width:40.063em) {
+      .trip-panels-container section.trip-panels .trip-info {
+        margin-bottom: 50px; } }
+    .trip-panels-container section.trip-panels .trip-info .title-wrapper.more-deals {
+      -webkit-transition: background 0.3s ease-in-out;
+      -moz-transition: background 0.3s ease-in-out;
+      transition: background 0.3s ease-in-out; }
+      .trip-panels-container section.trip-panels .trip-info .title-wrapper.more-deals:first-child:hover {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px; }
+      .trip-panels-container section.trip-panels .trip-info .title-wrapper.more-deals:hover {
+        background: #353535;
+        -webkit-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        transition: background 0.3s ease-in-out; }
+      .trip-panels-container section.trip-panels .trip-info .title-wrapper.more-deals .title {
+        padding: 0;
+        margin-bottom: 0; }
+        .trip-panels-container section.trip-panels .trip-info .title-wrapper.more-deals .title h3 {
+          font-size: 1.025rem;
+          color: #FFFFFF;
+          font-weight: bold;
+          padding-top: 27px;
+          margin-top: 0; }
+        .trip-panels-container section.trip-panels .trip-info .title-wrapper.more-deals .title .price {
+          border-bottom: none;
+          box-shadow: none;
+          font-size: 2.8rem;
+          line-height: 2.8rem;
+          margin-bottom: 33px; }
+    .trip-panels-container section.trip-panels .trip-info .title, .trip-panels-container section.trip-panels .trip-info .price, .trip-panels-container section.trip-panels .trip-info .description {
+      text-align: center;
       color: #FFFFFF;
+      margin: 0 auto; }
+    @media only screen and (min-width:40.063em) and (max-width:60.3125em) {
+      .trip-panels-container section.trip-panels .trip-info .right-side {
+        float: right;
+        width: 54%;
+        padding: 0 6% 0 8%; } }
+    @media only screen and (min-width:40.063em) and (max-width:60.3125em) {
+      .trip-panels-container section.trip-panels .trip-info .left-side {
+        float: left;
+        height: 220px;
+        width: 45.8%;
+        border-right: 1px solid #414141;
+        box-shadow: 1px 0 #646464; } }
+    .trip-panels-container section.trip-panels .trip-info .title {
+      width: 100%;
+      font-size: 1.5rem;
+      padding: 21px 0;
+      margin-bottom: 30px;
+      font-weight: bold;
       border-bottom: 1px solid #414141;
       box-shadow: 0 1px #646464; }
+      .trip-panels-container section.trip-panels .trip-info .title.more-deals h3 {
+        color: #FFFFFF; }
       @media only screen and (min-width:40.063em) and (max-width:60.3125em) {
-        .trip-panels-container .trip-panels .trip-info .title {
-          width: 50%;
-          float: right; } }
-    .trip-panels-container .trip-panels .trip-info .price {
+        .trip-panels-container section.trip-panels .trip-info .title {
+          border-bottom: none;
+          box-shadow: none;
+          text-align: left;
+          margin-bottom: 0;
+          padding: 59px 0 10px; } }
+    .trip-panels-container section.trip-panels .trip-info .details-wrapper {
+      text-align: center; }
+    .trip-panels-container section.trip-panels .trip-info .price {
       font-size: 4.3rem;
       font-weight: 300;
-      border-bottom: 10px solid #FFFFFF; }
+      border-bottom: 10px solid #FFFFFF;
+      display: inline-block;
+      margin-bottom: 40px; }
       @media only screen and (min-width:40.063em) and (max-width:60.3125em) {
-        .trip-panels-container .trip-panels .trip-info .price {
-          width: 50%;
-          float: left; } }
-    .trip-panels-container .trip-panels .trip-info .details {
+        .trip-panels-container section.trip-panels .trip-info .price {
+          padding-top: 40px; } }
+    .trip-panels-container section.trip-panels .trip-info .description {
+      display: inline-block;
+      width: 250px;
       margin: 0;
       margin-bottom: 40px; }
       @media only screen and (min-width:40.063em) and (max-width:60.3125em) {
-        .trip-panels-container .trip-panels .trip-info .details {
-          width: 50%;
-          float: right; } }
+        .trip-panels-container section.trip-panels .trip-info .description {
+          text-align: left;
+          display: block;
+          width: initial; } }
+    .trip-panels-container section.trip-panels .trip-info h2.more-deals-link {
+      text-align: center;
+      padding: 4px 0 16px;
+      margin-bottom: 0;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      -webkit-transition: background 0.3s ease-in-out;
+      -moz-transition: background 0.3s ease-in-out;
+      transition: background 0.3s ease-in-out; }
+      .trip-panels-container section.trip-panels .trip-info h2.more-deals-link:hover {
+        background: #353535;
+        -webkit-transition: background 0.3s ease-in-out;
+        -moz-transition: background 0.3s ease-in-out;
+        transition: background 0.3s ease-in-out; }
+      .trip-panels-container section.trip-panels .trip-info h2.more-deals-link a {
+        color: #FFFFFF;
+        font-size: 1.6rem; }
+      .trip-panels-container section.trip-panels .trip-info h2.more-deals-link img {
+        height: 45px;
+        width: 45px;
+        margin-left: 15px; }
 
 .more-deals-container h2 {
   padding: 20px 0;
   margin: 0;
   text-align: center;
   background: #88C2C0;
-  font-weight: bold; }
+  font-weight: bold;
+  line-height: 1rem; }
 .more-deals-container a {
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  font-size: 1.6rem; }
 .more-deals-container img {
   height: 45px;
-  width: 45px; }
+  width: 45px;
+  margin-left: 15px; }
 
 .footer-container {
   background: #272727; }
   .footer-container .footer-wrap {
     margin: 0 auto;
     width: 290px; }
+    @media only screen and (min-width:40.063em) {
+      .footer-container .footer-wrap {
+        width: 100%; } }
     .footer-container .footer-wrap footer {
       color: #535353;
-      font-size: .9rem;
+      font-size: 0.9rem;
       text-align: center;
       padding: 25px 0; }
+      @media only screen and (min-width:40.063em) {
+        .footer-container .footer-wrap footer {
+          padding-bottom: 90px; } }

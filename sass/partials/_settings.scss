@@ -118,6 +118,7 @@ $font-family-sans-serif: "Open Sans", Helvetica, Arial, sans-serif;
 // $black       : #000000;
    $soft-blue   : #88C2C0;
    $grey-medium : #535353;
+   $grey-med-drk: #353535;
    $grey-dark   : #272727;
 
 // We use these as default colors throughout
@@ -164,9 +165,9 @@ $medium-range: (40.063em, 60.3125em);         // 641-965
 $medium-middle: (54.1875em, 60.3125em);     // 867-965      
 $medium-long: (60.375em, 75em);             // 966-1200
 // $large-range: (64.063em, 90em);          // 1025-1440 original
-$large-range: (60.375em, 90em);          // 966-1440
+$large-range: (60.375em, 75em);          // 966-1440
 $large-short: (75.063em, 90em);             // >= 1201
-$xlarge-range: (90.063em, 120em);        // 1441-1920
+$xlarge-range: (75.063em, 120em);        // 1441-1920
 $xxlarge-range: (120.063em, 99999999em); // 1921
 
 $screen: "only screen";
