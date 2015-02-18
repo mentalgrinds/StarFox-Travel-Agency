@@ -5,9 +5,9 @@
 
 
 @mixin hover-fade($property) {
-  -webkit-transition: $property 0.3s ease-in-out;
-     -moz-transition: $property 0.3s ease-in-out;
-          transition: $property 0.3s ease-in-out;
+  -webkit-transition: $property 0.4s ease-in-out;
+     -moz-transition: $property 0.4s ease-in-out;
+          transition: $property 0.4s ease-in-out;
 }
 
 body {
@@ -79,7 +79,6 @@ header {
   }
 
   h1 {
-    // text-align: center;
     font-size: 1.75rem;
   }
 
@@ -140,12 +139,19 @@ header {
   }
 }
 
+@-webkit-keyframes rocking {
+  0% {-webkit-transform: rotate(-15deg);}
+  50% {-webkit-transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(-15deg);}
+}
+
 .hero-container {
 
   @media #{$medium-up} {
     padding: 78px 50px 50px;
 
   }
+
 
   .hero {
     position: relative;
@@ -181,6 +187,8 @@ header {
       margin-left: -163px;
       background: url(../images/ship.svg) 50% -20px no-repeat;
       background-size: cover;
+      -webkit-animation: rocking 4s infinite ease-in-out;
+
 
       @media #{$medium-up} {
         top: -54px;
@@ -254,6 +262,7 @@ header {
   }
 }
 
+
 .trip-panels-container {
   
   padding: 58px 49px 0;
@@ -287,7 +296,6 @@ header {
 
       @media #{$medium-up} {
         margin-bottom: 50px;
-
       }
 
 

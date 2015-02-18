@@ -3073,14 +3073,14 @@ header {
         .desktop-main-nav .custom-large-nav nav ul li {
           display: inline-block;
           padding: 0 1.5rem;
-          -webkit-transition: background 0.3s ease-in-out;
-          -moz-transition: background 0.3s ease-in-out;
-          transition: background 0.3s ease-in-out; }
+          -webkit-transition: background 0.4s ease-in-out;
+          -moz-transition: background 0.4s ease-in-out;
+          transition: background 0.4s ease-in-out; }
           .desktop-main-nav .custom-large-nav nav ul li:hover {
             background: #353535;
-            -webkit-transition: background 0.3s ease-in-out;
-            -moz-transition: background 0.3s ease-in-out;
-            transition: background 0.3s ease-in-out; }
+            -webkit-transition: background 0.4s ease-in-out;
+            -moz-transition: background 0.4s ease-in-out;
+            transition: background 0.4s ease-in-out; }
           .desktop-main-nav .custom-large-nav nav ul li > a {
             color: #88C2C0;
             font-size: 1.1rem;
@@ -3088,6 +3088,16 @@ header {
             display: block; }
             .desktop-main-nav .custom-large-nav nav ul li > a:hover {
               color: #FFFFFF; }
+
+@-webkit-keyframes rocking {
+  0% {
+    -webkit-transform: rotate(-15deg); }
+
+  50% {
+    -webkit-transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(-15deg); } }
 
 @media only screen and (min-width:40.063em) {
   .hero-container {
@@ -3122,7 +3132,8 @@ header {
     top: 0;
     margin-left: -163px;
     background: url(../images/ship.svg) 50% -20px no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    -webkit-animation: rocking 4s infinite ease-in-out; }
     @media only screen and (min-width:40.063em) {
       .hero-container .hero .hero-image {
         top: -54px; } }
@@ -3156,14 +3167,14 @@ header {
     width: 100%;
     border-bottom: .4375rem solid #272727;
     text-align: center;
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    transition: background 0.3s ease-in-out; }
+    -webkit-transition: background 0.4s ease-in-out;
+    -moz-transition: background 0.4s ease-in-out;
+    transition: background 0.4s ease-in-out; }
     .hero-container .hero .hero-button:hover {
       background: #353535;
-      -webkit-transition: background 0.3s ease-in-out;
-      -moz-transition: background 0.3s ease-in-out;
-      transition: background 0.3s ease-in-out; }
+      -webkit-transition: background 0.4s ease-in-out;
+      -moz-transition: background 0.4s ease-in-out;
+      transition: background 0.4s ease-in-out; }
     @media only screen and (min-width:40.063em) {
       .hero-container .hero .hero-button {
         max-width: 310px;
@@ -3194,29 +3205,29 @@ header {
     background: #535353;
     border-radius: 6px;
     margin-bottom: 60px;
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    transition: background 0.3s ease-in-out; }
+    -webkit-transition: background 0.4s ease-in-out;
+    -moz-transition: background 0.4s ease-in-out;
+    transition: background 0.4s ease-in-out; }
     .trip-panels-container section.trip-panels .trip-info.trip-link:hover {
       background: #353535;
-      -webkit-transition: background 0.3s ease-in-out;
-      -moz-transition: background 0.3s ease-in-out;
-      transition: background 0.3s ease-in-out; }
+      -webkit-transition: background 0.4s ease-in-out;
+      -moz-transition: background 0.4s ease-in-out;
+      transition: background 0.4s ease-in-out; }
     @media only screen and (min-width:40.063em) {
       .trip-panels-container section.trip-panels .trip-info {
         margin-bottom: 50px; } }
     .trip-panels-container section.trip-panels .trip-info .title-wrapper.more-deals {
-      -webkit-transition: background 0.3s ease-in-out;
-      -moz-transition: background 0.3s ease-in-out;
-      transition: background 0.3s ease-in-out; }
+      -webkit-transition: background 0.4s ease-in-out;
+      -moz-transition: background 0.4s ease-in-out;
+      transition: background 0.4s ease-in-out; }
       .trip-panels-container section.trip-panels .trip-info .title-wrapper.more-deals:first-child:hover {
         border-top-left-radius: 6px;
         border-top-right-radius: 6px; }
       .trip-panels-container section.trip-panels .trip-info .title-wrapper.more-deals:hover {
         background: #353535;
-        -webkit-transition: background 0.3s ease-in-out;
-        -moz-transition: background 0.3s ease-in-out;
-        transition: background 0.3s ease-in-out; }
+        -webkit-transition: background 0.4s ease-in-out;
+        -moz-transition: background 0.4s ease-in-out;
+        transition: background 0.4s ease-in-out; }
       .trip-panels-container section.trip-panels .trip-info .title-wrapper.more-deals .title {
         padding: 0;
         margin-bottom: 0; }
@@ -3292,14 +3303,14 @@ header {
       margin-bottom: 0;
       border-bottom-left-radius: 6px;
       border-bottom-right-radius: 6px;
-      -webkit-transition: background 0.3s ease-in-out;
-      -moz-transition: background 0.3s ease-in-out;
-      transition: background 0.3s ease-in-out; }
+      -webkit-transition: background 0.4s ease-in-out;
+      -moz-transition: background 0.4s ease-in-out;
+      transition: background 0.4s ease-in-out; }
       .trip-panels-container section.trip-panels .trip-info h2.more-deals-link:hover {
         background: #353535;
-        -webkit-transition: background 0.3s ease-in-out;
-        -moz-transition: background 0.3s ease-in-out;
-        transition: background 0.3s ease-in-out; }
+        -webkit-transition: background 0.4s ease-in-out;
+        -moz-transition: background 0.4s ease-in-out;
+        transition: background 0.4s ease-in-out; }
       .trip-panels-container section.trip-panels .trip-info h2.more-deals-link a {
         color: #FFFFFF;
         font-size: 1.6rem; }
